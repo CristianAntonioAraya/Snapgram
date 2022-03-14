@@ -34,21 +34,23 @@
     flex-direction: column;
 }
 .home__input{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur( 5px );
     width: 100%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     border-radius: 10px;
     color: $Dark_Color;
     transition: border 0.3s ease;
     &:focus{
-        border: 2px solid #051367;
+        border: 2px solid rgba(255, 255, 255, 0.233);        
         outline: none;
     }
 }
 .home__button{
     border: none;
-    background-color: $Light_Color;
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    color: #051367;
+    color: $Dark_Color;
     cursor: pointer;
     &:hover{
         background-color: $Dark_Color;
