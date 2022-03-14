@@ -1,0 +1,22 @@
+.search__container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ad5389, #3c1053);
+	background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search__box{
+    position: absolute;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, rgba(255,255,255,0.25) 0%, rgba(49, 49, 49, 0.2) 100%);
+    backdrop-filter: blur( 5px );
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    box-shadow: 0 8px 32px 0 rgba(87, 87, 87, 0.37);
+}

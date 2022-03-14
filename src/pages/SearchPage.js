@@ -9,10 +9,10 @@ const SearchPage = () => {
 
 
   return (
-    <div className='home__container'>
+    <div className='search__container'>
         <Background/>
-        <div>
-            pepe
+        <div className='search__box'>
+            pep
         </div>
         <p>{searchText}</p>
     </div>

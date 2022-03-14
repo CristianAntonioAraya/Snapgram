@@ -26,7 +26,7 @@ const HomePage = () => {
         <div className='home__container'>
             <Background/>
             <div className='home__box'>
-                <h2 className='home__text'>Snapgram</h2>
+                <h2 className='home__title'>Snapgram</h2>
                 <form onSubmit={handleSubmit} className='home__form'>
                     <input className='home__input' value={textInput} onChange={ (e) => setTextInput( e.target.value )}/>
                     <button className='home__button' type='submit'>Search</button>

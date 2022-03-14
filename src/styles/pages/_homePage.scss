@@ -10,9 +10,7 @@
 }
 
 .home__box{
-    position: absolute;
-    width: 25rem;
-    height: 15rem;
+    position: absolute;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,20 +21,11 @@
     border: 1px solid rgba(255, 255, 255, 0.233);
     box-shadow: 0 8px 32px 0 rgba(87, 87, 87, 0.37);
 }
-.home__text{
-    color: #ffffff;
-    font-size: 50px;
-}
-.home__circle{
-    position: absolute;
-    left: 20%;
-    top: 10%;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 100%;
-    background-color: red;
+.home__title{
+    color: $Light_Color;
 }
 .home__form{
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -45,13 +34,134 @@
     flex-direction: column;
 }
 .home__input{
-    font-size: 20px;
     width: 100%;
-    border: none;
-    margin: 1rem 0;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: $Dark_Color;
+    transition: border 0.3s ease;
+    &:focus{
+        border: 2px solid #051367;
+        outline: none;
+    }
 }
 .home__button{
-    font-size: 20px;
     border: none;
-    background-color: white;
+    background-color: $Light_Color;
+    border-radius: 10px;
+    color: #051367;
+    cursor: pointer;
+    &:hover{
+        background-color: $Dark_Color;
+        color: $Light_Color;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home__box{
+        width: 85%;
+        height: 35%;
+    }
+    .home__title{
+        font-size: 35px;
+    }
+    .home__form{
+        padding: 0 1.5rem;
+    }
+    .home__input{
+        font-size: 20px;
+        margin: 1rem 0;
+        padding: 0.3rem 0.5rem;
+    }
+    .home__button{
+        font-size: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .home__box{
+        width: 70%;
+        height: 35%;
+    }
+    .home__title{
+        font-size: 45px;
+    }
+    .home__form{
+        padding: 0 2rem;
+    }
+    .home__input{
+        font-size: 25px;
+        margin: 1rem 0;
+        padding: 0.3rem 0.5rem;
+    }
+    .home__button{
+        font-size: 25px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .home__box{
+        width: 70%;
+        height: 35%;
+    }
+    .home__title{
+        font-size: 45px;
+    }
+    .home__form{
+        padding: 0 2rem;
+    }
+    .home__input{
+        font-size: 25px;
+        margin: 1rem 0;
+        padding: 0.3rem 0.5rem;
+    }
+    .home__button{
+        font-size: 25px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .home__box{
+        width: 50%;
+        height: 35%;
+    }
+    .home__title{
+        font-size: 45px;
+    }
+    .home__form{
+        padding: 0 2rem;
+    }
+    .home__input{
+        font-size: 25px;
+        margin: 1rem 0;
+        padding: 0.3rem 0.5rem;
+    }
+    .home__button{
+        font-size: 25px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .home__box{
+        width: 50%;
+        height: 40%;
+    }
+    .home__title{
+        font-size: 50px;
+    }
+    .home__form{
+        padding: 0 2rem;
+    }
+    .home__input{
+        font-size: 25px;
+        margin: 1rem 0;
+        padding: 0.3rem 0.5rem;
+    }
+    .home__button{
+        font-size: 25px;
+    }
 }
