@@ -17,3 +17,10 @@ export const getData = () => {
         console.log(error)
     }
 }
+
+export const searchData = ( search ) => (
+    axios.get(`${API_URL}/?method=flickr.photos.search&per_page=50&nojsoncallback=1&tags=${search}&format=json&api_key=${key}`)
+    .then( ({data}) => {
+        return data.photos
+    })
+)
